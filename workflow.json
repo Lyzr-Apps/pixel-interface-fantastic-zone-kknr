@@ -1,0 +1,50 @@
+{
+  "workflow": {
+    "nodes": [
+      {
+        "id": "input_node",
+        "type": "Input",
+        "label": "Vendor Form Data",
+        "nodeCategory": "input"
+      },
+      {
+        "id": "vendor_pdf_agent",
+        "type": "Agent",
+        "label": "Vendor PDF Generator Agent",
+        "nodeCategory": "agent"
+      },
+      {
+        "id": "output_node",
+        "type": "Output",
+        "label": "Generated PDF Output",
+        "nodeCategory": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "input_node",
+        "target": "vendor_pdf_agent"
+      },
+      {
+        "source": "vendor_pdf_agent",
+        "target": "output_node"
+      }
+    ]
+  },
+  "agents": [
+    {
+      "agent_id": "6997ec8577b90295a058d617",
+      "name": "Vendor PDF Generator Agent",
+      "description": "Receives structured vendor form data, formats it into a professional vendor onboarding document layout, and generates a downloadable PDF",
+      "provider": "Google",
+      "model": "gemini-2.5-pro",
+      "temperature": 0.2,
+      "top_p": 1,
+      "file_output": true,
+      "image_output_config": null,
+      "voice_config": null,
+      "tool_configs": [],
+      "managed_agents": []
+    }
+  ]
+}

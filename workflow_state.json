@@ -1,0 +1,14 @@
+{
+  "agents": [
+    {
+      "agent_id": "6997ec8577b90295a058d617",
+      "name": "Vendor PDF Generator Agent",
+      "node_id": "vendor_pdf_agent",
+      "provider": "Google",
+      "model": "gemini-2.5-pro",
+      "file_output": true
+    }
+  ],
+  "rag_ids": [],
+  "schedules": []
+}

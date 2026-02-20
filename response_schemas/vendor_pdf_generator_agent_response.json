@@ -1,0 +1,28 @@
+{
+  "agent_name": "Vendor PDF Generator Agent",
+  "agent_id": "6997ec8577b90295a058d617",
+  "description": "Receives structured vendor form data, formats it into a professional vendor onboarding document layout, and generates a downloadable PDF",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "status": "string",
+    "message": "string",
+    "document_title": "string",
+    "vendor_name": "string"
+  },
+  "example_response": {
+    "status": "Status of the PDF generation - success or error",
+    "message": "A message describing the result of the PDF generation",
+    "document_title": "The title of the generated document",
+    "vendor_name": "The name of the vendor from the form data"
+  },
+  "has_module_outputs": true,
+  "module_outputs_example": {
+    "artifact_files": [
+      {
+        "file_url": "https://example.com/file.pdf"
+      }
+    ]
+  }
+}
